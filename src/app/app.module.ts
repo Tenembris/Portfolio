@@ -9,6 +9,7 @@ import { GithubSectionComponent } from './github-section/github-section.componen
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MainComponent } from './main/main.component';
 import { ExpComponent } from './exp/exp.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ExpComponent } from './exp/exp.component';
     GithubSectionComponent,
     MainComponent,
     ExpComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
