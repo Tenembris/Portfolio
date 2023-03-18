@@ -31,8 +31,8 @@ export class ExpComponent implements OnInit {
         ],
         datasets: [
           {
-            label: 'My experience from 0 - 10',
-            data: ['3', '2', '5', '4', '3', '3', '4', '10'],
+            label: 'My rating from 0 - 10',
+            data: ['7', '4', '8', '6', '5', '5', '6', '10'],
             backgroundColor: 'rgb(116,119,219)',
             borderRadius: 50,
           },
@@ -64,8 +64,8 @@ export class ExpComponent implements OnInit {
         ],
         datasets: [
           {
-            label: 'My experience from 0 - 10',
-            data: ['3', '2', '5', '4', '3', '3', '4', '10'],
+            label: 'My rating from 0 - 10',
+            data: ['7', '4', '8', '6', '5', '5', '6', '10'],
             backgroundColor: 'rgb(116,119,219)',
             borderRadius: 50,
           },

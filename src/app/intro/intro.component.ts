@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-intro',
@@ -14,5 +15,10 @@ export class IntroComponent implements OnInit {
     clip?.addEventListener('mouseover', function (e) {
       clip?.onplay;
     });
+    document.onreadystatechange = function () {
+      if (document.readyState == 'complete') {
+        AOS.init();
+      }
+    };
   }
 }

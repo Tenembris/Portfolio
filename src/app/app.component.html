@@ -1,8 +1,45 @@
 <nav class="navbar1">
-    <div class="container-fluid1">
-        <a id="Nav_aboutme" routerLink="/AboutMe"> About Me</a>
-        <a id="home" href="#"> <i class="bi bi-house-fill"></i></a>
-        <a id="social" href=""> Social</a>
-    </div>
+  <div class="container-fluid1">
+    <a id="Nav_aboutme" routerLink="/AboutMe"> About Me</a>
+    <a id="home" href="#"> <i class="bi bi-house-fill"></i></a>
+    <a id="social" (click)="Display_chat()"> Additional Info</a>
+  </div>
 </nav>
+
+<div id="Chat-Box">
+  <div id="Chat-Box-Header">
+    <div id="Chat-Box-Name">Hi, I'm Mandi</div>
+    <a id="Chat-Box-Cancel" (click)="Display_chat()"><i class="bi bi-x"></i></a>
+  </div>
+  <div id="Chat-Box-Main">
+    <div class="Chat-Box-Answer">Hi, I'm Mandi. What do you want to know?</div>
+  </div>
+  <div id="Chat-Box-User-Questions"></div>
+  <div id="Chat-Box_Footer">
+    <button class="Question_Button" (click)="createDiv_Hi()">Hi</button>
+    <div id="Hi_Question" style="display: none">Hi, How are you Mandi</div>
+
+    <div id="Hi_Answer" style="display: none">
+      Fine, What Do you want to know about creator?
+    </div>
+    <button class="Question_Button" (click)="createDiv_Contact()">
+      Contact
+    </button>
+    <div id="Contact_Question" style="display: none">
+      Where i can find contact information?
+    </div>
+    <div id="Contact_Answer" style="display: none">
+      Contact form is on the bottom of "About me" page =>
+      <a href="https://myportfoliov01.web.app/AboutMe" style="font-size: 16px"
+        >Here!</a
+      >
+    </div>
+    <button class="Question_Button" (click)="createDiv_Hobby()">Hobby</button>
+    <div id="Hobby_Question" style="display: none">What about his Hobbies?</div>
+    <div id="Hobby_Answer" style="display: none">
+      He is interested in gym, programming and computer stuff
+    </div>
+  </div>
+</div>
+
 <router-outlet></router-outlet>
